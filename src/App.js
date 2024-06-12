@@ -1,15 +1,26 @@
+import React, { useState, useEffect } from 'react';
+import LandingPage from './components/LandingPage';
+import MainPage from './components/MainPage';
 
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import './App.css';
+//import Header from './components/Header';
+//import Main from './components/Main';
+//import Footer from './components/Footer';
+//import './App.css';
 
 function App() {
+  const [showMainPage, setShowMainPage] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowMainPage(true);
+    }, 3000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      {showMainPage ? <MainPage /> : <LandingPage />}
     </div>
   );
 }
