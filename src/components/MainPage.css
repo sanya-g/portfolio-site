@@ -80,7 +80,55 @@
   .blink {
     animation: blink 1s step-end infinite;
   }
+
+  .project-card {
+    display: flex;
+  }
+
+  .project-card-left {
+    margin-right: 10px;
+  }
   
+  .project-card-left img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .project-card-right {
+    flex: 1;
+  }
+  
+  .project-tags {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .project-tag {
+    background: #e8e7e7;;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  a:link {
+    color: #6b6b6b;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  a:visited {
+    color: #6b6b6b;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
   @keyframes blink {
     from, to {
       opacity: 1;
@@ -134,7 +182,6 @@
     width: 60%;
     display: flex;
     justify-content: center;
-     /* Align content to the end of the right column */
   }
 
   @keyframes bounce {
