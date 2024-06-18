@@ -37,7 +37,7 @@ const MainPage = () => {
           <Project
             duration="May 2024"
             title="Find Your Mix »"
-            description="Created for YATÉ Yerba Mate. The website recommends a YATÉ drink for the user based on their favorite musical artists. Our flash release software strategy resulted in 150+ new user discovery for YATÉ."
+            description="(Mobile-only) Created for YATÉ Yerba Mate. The website recommends a YATÉ drink for the user based on their favorite musical artists. Our flash release software strategy resulted in 150+ new user discovery for YATÉ."
             tags={['React.js', 'Tailwind']}
             logo="https://www.spiritedaway.co/cdn/shop/files/YATE_SUBLIME_GINGER_CAN_01_a1cf4a8e-3626-4346-a359-e0ea1900e23a.webp?v=1700800605" 
             link="https://drink-yate.netlify.app/"
