@@ -209,7 +209,7 @@
   
     .footer {
       flex-direction: column;
-      text-align: right;
+      text-align: left;
     }
   
     .footer-left {
