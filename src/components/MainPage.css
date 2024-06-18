@@ -209,10 +209,14 @@
   
     .footer {
       flex-direction: column;
-      text-align: center;
+      text-align: right;
     }
   
     .footer-left {
       margin-bottom: 10px;
     }
+
+    .scroll-text {
+        display: none;
+      }
   }
