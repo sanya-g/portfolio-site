@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; 
+import rankifyLogo from './icons/rankify.png';
 import './MainPage.css';
 
 const MainPage = () => {
@@ -33,6 +34,16 @@ const MainPage = () => {
       </div>
       <div className="right-column" id = "right-column">
         <h2>Projects</h2>
+        <div className="project-section">
+          <Project
+            duration="Dec 2024"
+            title="Rankify »"
+            description="This web app is a social media-style platform for users to rank songs in real-time, as well as connect with friends and react to leaderboard rankings. It utilizes a Java backend as well as multi-threading and networking supported by dynamic web page content."
+            tags={['React.js', 'Java', 'Supabase', 'PostgreSQL', 'API']}
+            logo={rankifyLogo}
+            link="https://github.com/sanya-g/rankify/tree/main"
+          />
+        </div>
         <div className="project-section">
           <Project
             duration="May 2024"
